@@ -26,6 +26,12 @@ jobs:
         run: |
           source ~/.nvm/nvm.sh
           nvm list
+      - uses: actions/setup-node@v3.3.0
+        with:
+          python-version: '12'
+      - uses: actions/setup-node@v3.3.0
+        with:
+          python-version: '14'          
       - uses: actions/setup-python@v4
         with:
           python-version: '3.7'
