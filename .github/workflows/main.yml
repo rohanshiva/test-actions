@@ -22,9 +22,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.8'
+      - id: install-python
+        run: |
+          sudo apt install python3.8
+          sudo apt install python3.9
       - id: scan
         uses: rohanshiva/actions@main
       - run: echo say goodbye!
