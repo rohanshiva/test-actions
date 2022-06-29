@@ -31,10 +31,11 @@ jobs:
       - name: check nvm location
         shell: bash -l -eo pipefail {0}
         run: echo $NVM_DIR
-
       - name: test nvm command
         shell: bash -l -eo pipefail {0}
-        run: nvm ls
+        run: |
+          nvm use 12.22.12
+          npm --version
       - uses: actions/setup-python@v4
         with:
           python-version: '3.7'
