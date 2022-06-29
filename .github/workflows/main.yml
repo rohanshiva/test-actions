@@ -28,13 +28,13 @@ jobs:
           nvm list
       - uses: actions/setup-node@v3.3.0
         with:
-          python-version: '12'
+          node-version: '12'
       - uses: actions/setup-node@v3.3.0
         with:
           node-version: '14'          
       - uses: actions/setup-python@v4
         with:
-          node-version: '3.7'
+          python-version: '3.7'
       - uses: actions/setup-python@v4
         with:
           python-version: '3.8'
