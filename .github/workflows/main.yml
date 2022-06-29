@@ -21,6 +21,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - uses: actions/checkout@v3      
       - name: Check NVM location
         shell: bash -l -eo pipefail {0}
         run: echo $NVM_DIR
@@ -33,7 +34,6 @@ jobs:
           nvm use 12.22.12
           npm --version
           node --version
-      - uses: actions/checkout@v3  
       - uses: actions/setup-python@v4
         with:
           python-version: '3.7'
