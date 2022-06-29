@@ -24,6 +24,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - id: scan
-        uses: rohanshiva/actions@v1
+        uses: rohanshiva/actions@main
       - run: echo say goodbye!
         shell: bash
