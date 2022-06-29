@@ -34,8 +34,8 @@ jobs:
       - name: test nvm command
         shell: bash -l -eo pipefail {0}
         run: |
-          nvm use 12.22.12
-          npm --version
+          nvm use 14.19.3
+          node --version
       - uses: actions/setup-python@v4
         with:
           python-version: '3.7'
