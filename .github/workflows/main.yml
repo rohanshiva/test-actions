@@ -41,6 +41,7 @@ jobs:
         with:
           python-version: '3.9'
       - name: Check node version
+        shell: bash -l -eo pipefail {0}
         run: |
           sudo nvm use 12.22.12
           npm --version
