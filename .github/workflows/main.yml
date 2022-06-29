@@ -38,7 +38,9 @@ jobs:
         with:
           node-version: '14.x'
       - name: "check node versions"
-        run: nvm ls
+        run: |
+          source ~/.nvm/nvm.sh
+          nvm ls
 #       - id: install-python
 #         run: |
 #           sudo apt install python3.8
