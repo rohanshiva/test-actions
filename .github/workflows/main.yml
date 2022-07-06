@@ -23,3 +23,6 @@ jobs:
     steps:
       - id: scan
         uses: rohanshiva/actions@main
+        with:
+          app: "super-app-id"
+          desc: "short desc"
