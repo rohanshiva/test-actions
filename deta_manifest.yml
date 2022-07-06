@@ -1,0 +1,12 @@
+v: 1
+icon: ./assets/logo.png
+micros:
+    - name: python_new
+      directory: src/python_new/
+      engine: python3.9
+    - name: node_old
+      directory: src/node_old/
+      engine: nodejs12.x
+    - name: python_old
+      directory: src/python_old/
+      engine: python3.7
