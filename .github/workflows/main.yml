@@ -21,8 +21,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - id: test
-        run: rollup -c
+      - uses: actions/checkout@v3
+      - run: |
+            cd src/node_new
+            npm install
+            rollup -c
         shell: bash
       - id: scan
         uses: rohanshiva/actions@main
