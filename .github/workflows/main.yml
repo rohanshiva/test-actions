@@ -27,7 +27,7 @@ jobs:
             npm install
         shell: bash
       - name: rollup
-        run: cd src/node_new && rollup -c
+        run: cd src/node_new/node_modules && ls
         shell: bash
       - id: scan
         uses: rohanshiva/actions@main
