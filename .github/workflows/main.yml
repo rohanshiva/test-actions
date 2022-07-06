@@ -26,3 +26,5 @@ jobs:
         with:
           app: "super-app-id"
           desc: "short desc"
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
