@@ -1,5 +1,4 @@
 v: 1
-icon: ./assets/logo.png
 micros:
 #     - name: python_new
 #       directory: src/python_new/
