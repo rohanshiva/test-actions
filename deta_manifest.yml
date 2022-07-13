@@ -11,3 +11,4 @@ micros:
     - name: python_old
       directory: src/python_old/
       engine: python3.7
+      primary: true
