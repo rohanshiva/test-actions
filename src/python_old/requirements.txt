@@ -1,1 +1,1 @@
-nanoid
+fastapi
