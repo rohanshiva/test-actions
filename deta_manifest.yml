@@ -1,14 +1,14 @@
 v: 1
 micros:
-#     - name: python_new
-#       directory: src/python_new/
-#       engine: python3.9
-    - name : api
-      directory: src/api
+    - name: python_new
+      directory: src/python_new/
       engine: python3.9
-    - name: app
-      directory: src/app
-      engine: svelte
-      command: npm run build
-      publish: dist
-      primary: true
+#     - name : api
+#       directory: src/api
+#       engine: python3.9
+#     - name: app
+#       directory: src/app
+#       engine: svelte
+#       command: npm run build
+#       publish: dist
+#       primary: true
