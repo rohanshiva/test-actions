@@ -1,14 +1,9 @@
 v: 1
 micros:
-    - name: deta-express-starter
-      directory: src/deta-express-starter/
+    - name: pampu
+      directory: src/pampu/
       engine: nodejs14.x
-#     - name : api
-#       directory: src/api
-#       engine: python3.9
-#     - name: app
-#       directory: src/app
-#       engine: svelte
-#       command: npm run build
-#       publish: dist
-#       primary: true
+      engine: create-react-app
+      command: npm run build
+      publish: build
+      primary: true
