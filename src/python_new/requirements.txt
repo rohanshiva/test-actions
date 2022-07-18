@@ -1,3 +1,2 @@
 deta
 fastapi
-python-dotenv
