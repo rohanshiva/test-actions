@@ -2,7 +2,6 @@ v: 1
 micros:
     - name: pampu
       directory: src/pampu/
-      engine: nodejs14.x
       engine: create-react-app
       command: npm run build
       publish: build
