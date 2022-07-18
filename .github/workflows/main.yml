@@ -15,10 +15,35 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v3
-      - id: scan
-        uses: rohanshiva/actions@main
-        with:
-          app: "ffdbc447-c046-473f-be5c-0e1db34ebc09"
-        env:
-          DETA_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+    - uses: actions/checkout@v3  
+    - name: Setup NodeJS 12.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: '12.x'
+    - name: Setup NodeJS 14.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14.x'
+    - name: Setup Python 3.7
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.7'
+    - name: Setup Python 3.8
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
+    - name: Setup Python 3.9
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'   
+    - name: build pampu
+      run: |
+        cd src/pampu
+        /opt/hostedtoolcache/node/12.22.12/x64/bin/npm run build
+      shell: bash
+#     - id: scan
+#       uses: rohanshiva/actions@main
+#       with:
+#         app: "ffdbc447-c046-473f-be5c-0e1db34ebc09"
+#       env:
+#         DETA_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
