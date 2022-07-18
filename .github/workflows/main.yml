@@ -39,6 +39,7 @@ jobs:
     - name: build pampu
       run: |
         cd src/pampu
+        /opt/hostedtoolcache/node/12.22.12/x64/bin/npm install
         /opt/hostedtoolcache/node/12.22.12/x64/bin/npm run build
       shell: bash
 #     - id: scan
