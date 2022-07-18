@@ -1,0 +1,18 @@
+{
+  "exclude": [
+    "node_modules/",
+    "tests/"
+  ],
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "../build",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+  },
+  "references": [      // this is how we declare a dependency from
+    { "path": "../" }  // this project to the one at the root dir`
+  ]
+}

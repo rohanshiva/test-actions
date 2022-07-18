@@ -16,6 +16,14 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - uses: actions/checkout@v3
+      - name: install deps
+        working-directory: ./src/deta-express-starter
+        run: npm ci
+        shell: bash
+      - name: Run build command
+        working-directory: ./src/deta-express-starter
+        run: npm run build
+        shell: bash
       - id: scan
         uses: rohanshiva/actions@main
         with:

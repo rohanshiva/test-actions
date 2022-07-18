@@ -1,8 +1,8 @@
 v: 1
 micros:
-    - name: python_new
-      directory: src/python_new/
-      engine: python3.9
+    - name: deta-express-starter
+      directory: src/deta-express-starter/
+      engine: nodejs14.x
 #     - name : api
 #       directory: src/api
 #       engine: python3.9
