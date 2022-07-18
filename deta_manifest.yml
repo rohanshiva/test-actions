@@ -4,10 +4,10 @@ micros:
 #       directory: src/python_new/
 #       engine: python3.9
     - name : api
-      directory: api
+      directory: src/api
       engine: python3.9
     - name: app
-      directory: app
+      directory: src/app
       engine: svelte
       command: npm run build
       publish: dist
