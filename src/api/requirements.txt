@@ -1,0 +1,4 @@
+deta
+fastapi
+python-dotenv
+uvicorn[standard]==0.17.6
